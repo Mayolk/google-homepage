@@ -1,0 +1,1 @@
+This is a traning project for HTML and CSS. The asignment is to create a Google Homepage clone.

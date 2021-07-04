@@ -1,0 +1,41 @@
+/* Resets */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: 1.2;
+}
+
+/* Utilities */
+
+a {
+  color: rgb(40, 96, 160);
+}
+
+svg {
+  height: 24px;
+  width: auto;
+}
+
+/* Page */
+
+#input-suffix {
+  display: block;
+  background: url('https://www.gstatic.com/inputtools/images/tia.png') center center no-repeat;
+  height: 24px;
+  width: auto;
+}

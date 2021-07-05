@@ -18,6 +18,9 @@ body {
   font-weight: 400;
   color: #303030;
   line-height: 1.2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Utilities */
@@ -25,6 +28,10 @@ body {
 a {
   color: #303030;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 svg {
@@ -76,6 +83,11 @@ svg {
 
 #main {
   margin: 0 15px;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Main image */
@@ -90,8 +102,9 @@ svg {
 /* Form */
 
 #form {
-  margin: 30px auto 0 auto;
   max-width: 520px;
+  width: 96%;
+  margin-top: 30px;
 }
 
 #search-wrap {
@@ -168,6 +181,7 @@ svg {
 #languages {
   text-align: center;
   margin-top: 30px;
+  padding-bottom: 18vh;
 }
 
 .lang-link {
@@ -176,3 +190,39 @@ svg {
 }
 
 /* Footer */
+
+#footer {
+  font-size: 13px;
+  color: #777;
+  background-color: #f3f3f3;
+}
+
+#location {
+  padding: 14px 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.footer-links {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link-f {
+  padding: 0 10px;
+  color: #777;
+}
+
+@media (max-width: 1200px) {
+  .footer-links {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 610px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}

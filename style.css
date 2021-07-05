@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   font-weight: 400;
   color: #303030;
@@ -78,6 +78,8 @@ svg {
   margin: 0 15px;
 }
 
+/* Main image */
+
 #main-image {
   display: block;
   height: 80px;
@@ -85,12 +87,18 @@ svg {
   margin: 0 auto;
 }
 
+/* Form */
+
+#form {
+  margin: 30px auto 0 auto;
+  max-width: 520px;
+}
+
 #search-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  max-width: 520px;
+  width: 100%;
   border: 1px solid #ddd;
   padding: 6px 10px;
   border-radius: 1000px;
@@ -132,3 +140,39 @@ svg {
   height: 24px;
   width: 24px;
 }
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: #303030;
+}
+
+.btn:hover {
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+/* Language links */
+
+#languages {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.lang-link {
+  color: rgb(75, 24, 192);
+  margin-left: 5px;
+}
+
+/* Footer */
